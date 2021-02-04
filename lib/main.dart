@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
           leading: Container(
               padding: EdgeInsets.all(8.0),
               child:
-                  Image.asset("package:mealnote/assets/images/note-icon.png")),
+                  Image.asset("assets/images/note-icon.png")),
           title: Text("Notes App",
               style: TextStyle(
                   color: Colors.white,
