@@ -3,9 +3,9 @@ import 'package:mealnote/containers/NotePage.dart';
 import 'package:mealnote/models/MyNote.dart';
 
 class NoteList extends StatefulWidget {
-  final List<MyNote> notedata;
+  final List<MyNote> noteData;
 
-  NoteList(this.notedata, {Key key});
+  NoteList(this.noteData, {Key key});
 
   @override
   _ListNoteState createState() => _ListNoteState();
@@ -22,13 +22,13 @@ class _ListNoteState extends State<NoteList> {
               MediaQuery.of(context).orientation == Orientation.portrait
                   ? 2
                   : 3),
-      itemCount: widget.notedata.length == null ? 0 : widget.notedata.length,
+      itemCount: widget.noteData.length == null ? 0 : widget.noteData.length,
       itemBuilder: (BuildContext context, int i) {
         return GestureDetector(
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(
               builder: (BuildContext context) =>
-                  new NotePage(widget.notedata[i], false),
+                  new NotePage(widget.noteData[i], false),
             ));
           },
           child: Card(
@@ -39,7 +39,7 @@ class _ListNoteState extends State<NoteList> {
                   padding: const EdgeInsets.all(8.0),
                   width: double.infinity,
                   child: Text(
-                    widget.notedata[i].title,
+                    widget.noteData[i].title,
                     style:
                         TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
                   ),
@@ -49,7 +49,7 @@ class _ListNoteState extends State<NoteList> {
                     child: Container(
                       padding: const EdgeInsets.all(8.0),
                       child: Text(
-                        widget.notedata[i].note,
+                        widget.noteData[i].note,
                         style: TextStyle(fontSize: 16.0),
                       ),
                     ),
@@ -60,11 +60,11 @@ class _ListNoteState extends State<NoteList> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
-                  child: Text("Created: ${widget.notedata[i].createdAt}"),
+                  child: Text("Created: ${widget.noteData[i].createdAt}"),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
-                  child: Text("Modified: ${widget.notedata[i].updateAt}"),
+                  child: Text("Modified: ${widget.noteData[i].updateAt}"),
                 )
               ],
             ),
