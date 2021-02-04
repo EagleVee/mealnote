@@ -6,7 +6,7 @@ A project created for UET's Mobile Application Development course (INT3122_20).
 
 This project is an assignment of Mobile Cloud Computing course.
 
-This project is the source code of an application that note your meal daily.
+This project is the source code of an application that helps you note down things.
 
 ## Student Information
 
