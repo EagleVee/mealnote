@@ -23,3 +23,17 @@ To run this project, follow these steps:
 - Make sure that there's at least 1 mobile device or simulator connected to your computer
 - Run command `flutter pub get` to install dependencies
 - Run command `flutter run`
+
+## Results
+
+- Home Screen
+
+![alt Home Screen](./screenshots/home_screen.png)
+
+- Create new note
+
+![alt New Note](./screenshots/new_note.png)
+
+- Edit note
+
+![alt New Note](./screenshots/edit_note.png)
