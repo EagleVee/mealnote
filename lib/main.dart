@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mealnote/utils/DBHelper.dart';
-import 'package:mealnote/containers/NoteList.dart';
+import 'package:mealnote/components/NoteList.dart';
 import 'package:mealnote/containers/NotePage.dart';
 
 void main() => runApp(MyApp());
